@@ -8,9 +8,9 @@ total number of images
 number of classes
 class names and label mapping
 number of images in each split:
-train
-test
-prediction
+- train
+- test
+- prediction
 number of images in each class inside each split
 
 Why this matters:
@@ -26,6 +26,8 @@ train: 14,000
 test: 3,000
 prediction: 7,000
 class distribution bar chart
+
+
 2. File and data integrity checks
 
 Before any model work, check whether the dataset is clean.

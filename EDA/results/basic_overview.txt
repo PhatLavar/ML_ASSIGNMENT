@@ -1,0 +1,33 @@
+Total number of images: 24335
+Number of classes: 6
+Class names: ['buildings', 'forest', 'glacier', 'mountain', 'sea', 'street']
+
+Number of images in each split:
+  Train: 14034
+  Test: 3000
+  Prediction: 7301
+
+Number of images in each class inside each split:
+  Train Split:
+    buildings: 2191
+    forest: 2271
+    glacier: 2404
+    mountain: 2512
+    sea: 2274
+    street: 2382
+
+  Test Split:
+    buildings: 437
+    forest: 474
+    glacier: 553
+    mountain: 525
+    sea: 510
+    street: 501
+
+  Prediction Split:
+    buildings: 0
+    forest: 0
+    glacier: 0
+    mountain: 0
+    sea: 0
+    street: 0
