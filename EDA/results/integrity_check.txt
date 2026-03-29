@@ -1,154 +1,155 @@
-Corrupted Files:
+Corrupted Files: None
 
-Unreadable Files:
+Unreadable Files: None
 
-Empty Files:
+Empty Files: None
 
-Wrong File Extensions:
+Wrong File Extensions: None
 
 Duplicate Images:
   Duplicate Hash: deaf16287883d39ee2d95ed88aa9f27039682b6095389a9e1c338fb14d77ad4b
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\buildings\17425.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\23916.jpg
+  Train (buildings): 17425.jpg
+  Prediction: 23916.jpg
   Duplicate Hash: 2384e8a6f75916a10a4e29e27ae77fc0a6e36f8994f2f07379bfdf9d7f503e57
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\buildings\3869.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\9130.jpg
+  Train (buildings): 3869.jpg
+  Prediction: 9130.jpg
   Duplicate Hash: be50fcfce34406f628b804bfa9baa171f768b32b128cd30ff2e21e8ca25a069e
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\buildings\4000.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\17644.jpg
+  Train (buildings): 4000.jpg
+  Prediction: 17644.jpg
   Duplicate Hash: bc7d06d89f0cdd63f7bab9c4bd1dc9a0d6ea543c64e51b16a395e1657eea22ad
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\buildings\4551.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\street\1495.jpg
+  Train (buildings): 4551.jpg
+  Train (street): 1495.jpg
   Duplicate Hash: 1ef964e4f5290d17f34a66ee36b72e8ca53e01286dcc09dba7d10b591eb40a7a
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\buildings\4634.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_test\seg_test\street\21170.jpg
+  Train (buildings): 4634.jpg
+  Test (street): 21170.jpg
   Duplicate Hash: 08d8cd29e9b79273795a13092575d9b3435c000e7d4c1769f459d363ae5436e4
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\buildings\5069.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\street\2764.jpg
+  Train (buildings): 5069.jpg
+  Train (street): 2764.jpg
   Duplicate Hash: 9d7de1bd8ef0d88a880b0a9e550cf5ab5adae5b621c0affbe61fab621353d73f
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\buildings\9769.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\street\7293.jpg
+  Train (buildings): 9769.jpg
+  Train (street): 7293.jpg
   Duplicate Hash: 29fa61c906f26b21d269f80bacca9dab5dab00a75991b04743a9e4029d8ef56d
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\forest\10721.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\10873.jpg
+  Train (forest): 10721.jpg
+  Prediction: 10873.jpg
   Duplicate Hash: 4be57f1d67778164f50feb6090cb8a7b08ebe7637e582aa1adce521a8f372c84
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\forest\15657.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\forest\18807.jpg
+  Train (forest): 15657.jpg
+  Train (forest): 18807.jpg
   Duplicate Hash: b995e9a0763afcc246d46a6052cbe8724f5607d8f9cf3d0ce1abfa3ca7708192
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\forest\17378.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\10225.jpg
+  Train (forest): 17378.jpg
+  Prediction: 10225.jpg
   Duplicate Hash: ae6838624dc0ac2bf8993ce82b8f02a460b31878be8e68e1cfce0324e7c77dc4
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\forest\8688.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\forest\8689.jpg
+  Train (forest): 8688.jpg
+  Train (forest): 8689.jpg
   Duplicate Hash: 2b910be7ec5a40d59756d966c93e7d159d8e49918a6af3ddf1e406b5199e237b
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\glacier\10234.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\7654.jpg
+  Train (glacier): 10234.jpg
+  Train (mountain): 7654.jpg
   Duplicate Hash: 2702b4f323040bfd64caf52d56242cae54bf15bde9909f1d2cda57c25f81c82e
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\glacier\16044.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\17775.jpg
+  Train (glacier): 16044.jpg
+  Train (mountain): 17775.jpg
   Duplicate Hash: 95cf645dcc5e71a7b76d72f8c3cd38aa78a5a78d17bad66d9bcc376ea5a68d47
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\glacier\16827.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\15770.jpg
+  Train (glacier): 16827.jpg
+  Train (mountain): 15770.jpg
   Duplicate Hash: ec26362c10297d9f6f77bc1ab6d13c0b607f6041733d089539ba7c87dc242147
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\glacier\19319.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\6518.jpg
+  Train (glacier): 19319.jpg
+  Train (mountain): 6518.jpg
   Duplicate Hash: 9554e9a19a81fdb395d211435358b162de31c2b3acb020e6e863ae43f136a999
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\glacier\8191.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\16696.jpg
+  Train (glacier): 8191.jpg
+  Train (mountain): 16696.jpg
   Duplicate Hash: 8ff16db30c2e6742a953797dcfa43cad0e07fc420b0538b35f9043bc2e3179fc
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\glacier\8608.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\19959.jpg
+  Train (glacier): 8608.jpg
+  Train (mountain): 19959.jpg
   Duplicate Hash: 9a25c05280970d366910f2987ded1a3388ff3b894f38cb50d669bbc94cac3069
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\10214.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\13465.jpg
+  Train (mountain): 10214.jpg
+  Prediction: 13465.jpg
   Duplicate Hash: f90543d3b4dcef4e278a047de7626fa3d5122abd7f3458e047887c553bb58d58
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\14341.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_test\seg_test\glacier\21469.jpg
+  Train (mountain): 14341.jpg
+  Test (glacier): 21469.jpg
   Duplicate Hash: b5d02c997fccbe42fe8339a82d54d4e557dc430db0cab17420779bdf1dfbb5bb
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\15355.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\291.jpg
+  Train (mountain): 15355.jpg
+  Prediction: 291.jpg
   Duplicate Hash: 049582b801d1074b7cd7c9ed99e5ef11c834c2bb494c0996b22aae8bf91ba7c4
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\3439.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\6300.jpg
+  Train (mountain): 3439.jpg
+  Prediction: 6300.jpg
   Duplicate Hash: 792c2e049bc4950b0fafcc7a41eeb5efd1dc082e22525adba6ad5b47cd320a8a
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\3692.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\23113.jpg
+  Train (mountain): 3692.jpg
+  Prediction: 23113.jpg
   Duplicate Hash: c4b7287ce2da250ed50caf9fb7444c41122d46245e2d697a9d6a6362e2531637
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\4263.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\19941.jpg
+  Train (mountain): 4263.jpg
+  Prediction: 19941.jpg
   Duplicate Hash: 49226ebb4e0ba21b704974e9a0905210f6b7a03a87a4c2fdc4e9f8c997352512
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\5396.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\4550.jpg
+  Train (mountain): 5396.jpg
+  Prediction: 4550.jpg
   Duplicate Hash: 8abeea822034f73fc5c499b11e1f893ee0144e48055a5f46cc9bbac372fe2ce8
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\7037.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\sea\6337.jpg
+  Train (mountain): 7037.jpg
+  Train (sea): 6337.jpg
   Duplicate Hash: 592cd00b1e791f5ac9e33b1046dc9e085fd3c679490454ff4c84558cb48383bb
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\mountain\8656.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\13704.jpg
+  Train (mountain): 8656.jpg
+  Prediction: 13704.jpg
   Duplicate Hash: ff7c51e23bf3a8b01befac7aa70afae4dc839a021863b2d15541b04a5a911d0e
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\sea\12113.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\12951.jpg
+  Train (sea): 12113.jpg
+  Prediction: 12951.jpg
   Duplicate Hash: 846afbb65488c79a1345ff077e7e9aaf9576c10816e34d5cd77ece2f5ced4968
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\sea\14569.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\20415.jpg
+  Train (sea): 14569.jpg
+  Prediction: 20415.jpg
   Duplicate Hash: 48075b0ef1abd9615a20c50f563e4de37679993cd00bbb04c96120ac1090a083
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\sea\14713.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\20325.jpg
+  Train (sea): 14713.jpg
+  Prediction: 20325.jpg
   Duplicate Hash: dfb4fe01f8cd394c78600b6c24723fe214eaf551f2ded4a284df81c4a397c38c
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\sea\15096.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\10469.jpg
+  Train (sea): 15096.jpg
+  Prediction: 10469.jpg
   Duplicate Hash: 07f0fa030d0ffd4ea0d4847e83ce3b25a81a0293821706fa8619eb47955b684d
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\sea\16116.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\20793.jpg
+  Train (sea): 16116.jpg
+  Prediction: 20793.jpg
   Duplicate Hash: 14bb4f1ef66cbe42a72530b483441872fa712cdf64e3363cbaf4d2fbf943336d
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\sea\18707.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\5229.jpg
+  Train (sea): 18707.jpg
+  Prediction: 5229.jpg
   Duplicate Hash: 95ce860e4297c1eeb46ec0b5df2f45b680693596ad624e59853d90fde351ba85
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\sea\19255.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\sea\7872.jpg
+  Train (sea): 19255.jpg
+  Train (sea): 7872.jpg
   Duplicate Hash: 4f93f75b82d15e088b08ab1ba544de749e139437628d9b38b317e67c663abf4c
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\street\10408.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_test\seg_test\buildings\20805.jpg
+  Train (street): 10408.jpg
+  Test (buildings): 20805.jpg
   Duplicate Hash: 9b92fdbc06d4d307e7594e875e41ee1570df8b6a103ef608f76497a81cf9273a
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\street\10514.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\3946.jpg
+  Train (street): 10514.jpg
+  Prediction: 3946.jpg
   Duplicate Hash: 5df7ef50dcb17f18dce56d30afcb45e2e00e610421051f93616d88628c21aac9
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\street\17693.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\street\7618.jpg
+  Train (street): 17693.jpg
+  Train (street): 7618.jpg
   Duplicate Hash: 7823265cfabfe064e9c63afeb438932e476df252e07f71f04b2a67fa7f1e11cc
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\street\3492.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\street\373.jpg
+  Train (street): 3492.jpg
+  Train (street): 373.jpg
   Duplicate Hash: 8e254b19ac540b9f483a37723f737284377c95f74bd3cf88a0d42077faec16dc
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_train\seg_train\street\6392.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\17241.jpg
+  Train (street): 6392.jpg
+  Prediction: 17241.jpg
   Duplicate Hash: f9bc9b3f85b51551fcf0b6caeef6e9d5ec911010b66386d36276b7e3eecb6793
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_test\seg_test\buildings\20846.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\20667.jpg
+  Test (buildings): 20846.jpg
+  Prediction: 20667.jpg
   Duplicate Hash: c190bdc7a3ffb4db5d9d34c71fb352f10798edd84c51003d0cb5bf0449e6f741
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_test\seg_test\glacier\23783.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\7385.jpg
+  Test (glacier): 23783.jpg
+  Prediction: 7385.jpg
   Duplicate Hash: fb27289298d648fa66f0ce45b8040be2c6e3ae85cb08105a9fc60b4e50e9e082
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_test\seg_test\sea\22832.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\8586.jpg
+  Test (sea): 22832.jpg
+  Prediction: 8586.jpg
   Duplicate Hash: 8f7aaedfa1f5caece4112bed3c6425733d8858581aa858bd72bf3b6ab1e03832
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_test\seg_test\street\21347.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\21021.jpg
+  Test (street): 21347.jpg
+  Prediction: 21021.jpg
   Duplicate Hash: ea5eddff6b227e8286a930d9a3f8adc0ba6594168d28f20302fab3a11f6074a0
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\16921.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\7486.jpg
+  Prediction: 16921.jpg
+  Prediction: 7486.jpg
   Duplicate Hash: 4a2f40de3414d931a8f25125e657ee74391a2e3b0128148f439f58f4238d0ca9
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\18039.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\18760.jpg
+  Prediction: 18039.jpg
+  Prediction: 18760.jpg
   Duplicate Hash: ce86d97460cd74bbfc905f0e76f7c88ce390650394f863b6d1e137ec67a30600
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\18879.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\5953.jpg
+  Prediction: 18879.jpg
+  Prediction: 5953.jpg
   Duplicate Hash: bfaa8c93c05fb9892c69fb5a6b5ce7052c8f14d19dd9a38c7d3f57166a794875
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\19269.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\7484.jpg
+  Prediction: 19269.jpg
+  Prediction: 7484.jpg
   Duplicate Hash: 634acdfda5469346a2d941f8c56f9516c72b846d55ef6f0fa3b3f5305d7b6f4f
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\21223.jpg
-    C:\Users\ADMIN\Desktop\ML_IMAGE_DATASET\dataset\seg_pred\seg_pred\3970.jpg
+  Prediction: 21223.jpg
+  Prediction: 3970.jpg
 
-Duplicated Filenames:
+Duplicated Filenames: None
 
-Non-Image Files:
+Non-Image Files: None
+
