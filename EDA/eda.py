@@ -16,8 +16,8 @@ def eda_step_0():
         print("[ERROR] Dataset extraction failed. No such zip file found in the project root.")
         return None
 
-    print("[STEP 0] DONE: Dataset is ready for EDA")
     print(f"[INFO] Dataset extracted to: {dataset_info['dataset_dir']}")
+    print("[STEP 0] DONE: Dataset is ready for EDA")
     print("\n======================================================================")
     return dataset_info
 
