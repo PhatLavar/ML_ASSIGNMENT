@@ -4,6 +4,34 @@ import hashlib
 from PIL import Image
 import os
 
+def get_dataset_info(project_root: Path):
+    dataset_dir = project_root / "dataset"
+    zip_path = dataset_dir / "archive.zip"
+    seg_pred_dir = dataset_dir / "seg_pred" / "seg_pred"
+    seg_test_dir = dataset_dir / "seg_test" / "seg_test"
+    seg_train_dir = dataset_dir / "seg_train" / "seg_train"
+
+    # Check if the dataset is already extracted, if not, extract it
+    if not zip_path.exists():
+        print(f"[ERROR] {zip_path} not found. Please make sure the archive.zip exists.")
+        return None
+    
+    # If the extracted folders don't exist, proceed to extract the zip
+    if not (seg_pred_dir.exists() and seg_test_dir.exists() and seg_train_dir.exists()):
+        print("[INFO] Dataset directories not found. Extracting the ZIP file...")
+        dataset_info = zip_extraction(project_root)  # This function will handle extraction
+        if dataset_info is None:
+            return None
+
+    return {
+        "dataset_dir": dataset_dir,
+        "zip_path": zip_path,
+        "seg_pred_dir": seg_pred_dir,
+        "seg_test_dir": seg_test_dir,
+        "seg_train_dir": seg_train_dir
+    }
+
+
 
 """
 Step 0:
@@ -123,9 +151,9 @@ def generate_basic_overview(dataset_info: dict):
 
     print("[INFO] Getting numbers of images in each split")
     overview_content += "Number of images in each split:\n"
-    overview_content += f"  Train: {split_counts['train']}\n"
-    overview_content += f"  Test: {split_counts['test']}\n"
-    overview_content += f"  Prediction: {split_counts['prediction']}\n\n"
+    overview_content += f"  Train: {split_counts['train']} ({(split_counts['train'] / total_images) * 100:.2f}%)\n"
+    overview_content += f"  Test: {split_counts['test']} ({(split_counts['test'] / total_images) * 100:.2f}%)\n"
+    overview_content += f"  Prediction: {split_counts['prediction']} ({(split_counts['prediction'] / total_images) * 100:.2f}%)\n\n"
 
     overview_content += "Number of images in each class inside each split:\n"
     for split in split_counts:
@@ -135,7 +163,9 @@ def generate_basic_overview(dataset_info: dict):
             overview_content += f"\n  {split.capitalize()} Split:\n"
             
         for class_name in class_names:
-            overview_content += f"    {class_name}: {class_counts_split[split][class_name]}\n"
+            class_count = class_counts_split[split][class_name]
+            percentage = (class_count / total_images) * 100
+            overview_content += f"    {class_name}: {class_count} ({percentage:.2f}%)\n"
 
     # Write the overview to basic_overview.txt
     basic_overview_path = results_dir / "basic_overview.txt"
