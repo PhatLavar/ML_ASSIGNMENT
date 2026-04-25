@@ -2,6 +2,8 @@ import cv2
 import numpy as np
 import pandas as pd
 import time
+import concurrent.futures # Added for threading
+
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.cluster import MiniBatchKMeans
 from sklearn.decomposition import PCA
@@ -25,17 +27,30 @@ class BasePreprocessor:
     def extract_features_single(self, img):
         raise NotImplementedError("Subclasses must implement extract_features_single")
 
+    def _process_row(self, row):
+        # Helper method to map over threads
+        img = self._clean(row['filepath'])
+        if img is not None:
+            feat = self.extract_features_single(img)
+            return feat, row['class']
+        return None, None
+
     def extract_features(self, df, split_name, is_training=False):
         features, labels = [], []
         subset = df[df['split'] == split_name]
 
         print(f"Extracting features for {split_name} split ({len(subset)} images)...")
-        for _, row in subset.iterrows():
-            img = self._clean(row['filepath'])
-            if img is not None:
-                feat = self.extract_features_single(img)
+        
+        # OpenCV releases the GIL, making ThreadPoolExecutor highly effective
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            rows = [row for _, row in subset.iterrows()]
+            results = list(executor.map(self._process_row, rows))
+
+        # Unpack the threaded results
+        for feat, label in results:
+            if feat is not None:
                 features.append(feat)
-                labels.append(row['class'])
+                labels.append(label)
 
         X = np.array(features)
         
@@ -129,10 +144,11 @@ def run_traditional_pipeline(df, vocab_size=100, feature_configs=["hog", "sift"]
         X_train_scaled, y_train = preprocessor.extract_features(df, "train", is_training=True)
         X_test_scaled, y_test = preprocessor.extract_features(df, "test", is_training=False)
 
-        # 3. Dimensionality Reduction (Specific to HOG to speed up)
+        # 3. Dimensionality Reduction
         if f_type == "hog":
             print(f"Applying PCA (n_components={pca_components}) to {f_type.upper()}...")
-            pca = PCA(n_components=pca_components, whiten=True, random_state=42)
+            # svd_solver='randomized' massively reduces time complexity
+            pca = PCA(n_components=pca_components, whiten=True, svd_solver='randomized', random_state=42)
             X_train_final = pca.fit_transform(X_train_scaled)
             X_test_final = pca.transform(X_test_scaled)
         else:
