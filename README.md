@@ -69,5 +69,4 @@ ML_IMAGE_DATASET/
 
 ## 🔗 Links
 - **GitHub Repository:** [PhatLavar/ML_ASSIGNMENT](https://github.com/PhatLavar/ML_ASSIGNMENT)
-- **Colab Notebook:** [View on Google Colab](https://drive.google.com/file/d/1BRATa59P3803Lc5QfQQICKbtbLP1ph9P/view?usp=sharing)
-- **PDF Report:** To be added later.
+- **Colab Notebook:** [View on Google Colab](https://colab.research.google.com/drive/1ckxFsIRwGBbG8O3Z49JiPzYf3ihr47K7?usp=sharing)

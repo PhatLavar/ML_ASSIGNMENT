@@ -3,4 +3,8 @@
 **/seg_pred/
 **/archive.zip
 eda_result/
+assignment.md
+dataset/
+report/
+results.md
 *.pyc
