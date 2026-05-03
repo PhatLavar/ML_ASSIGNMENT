@@ -165,9 +165,7 @@ def run_traditional_pipeline(df, vocab_size=100, feature_configs=["hog", "sift"]
             exp_name = f"{f_type.upper()} + {m_name}"
             print(f"-> Running {exp_name}...")
 
-            start = time.time()
             model.fit(X_train_final, y_train)
-            elapsed = time.time() - start
 
             y_pred = model.predict(X_test_final)
             acc = accuracy_score(y_test, y_pred)
@@ -185,7 +183,7 @@ def run_traditional_pipeline(df, vocab_size=100, feature_configs=["hog", "sift"]
                 "Combination": exp_name,
                 "Accuracy": acc,
                 "F1 Score": f1,
-                "Train Time (s)": round(elapsed, 3)
+                # "Train Time (s)": round(elapsed, 3)
             })
 
     results_df = pd.DataFrame(results)
