@@ -58,8 +58,8 @@ def get_dataloaders(metadata, train_transform, test_transform, batch_size=32, va
     test_dataset = ImageFolder(root=test_dir, transform=test_transform)
 
     if valid_files is not None:
-        train_dataset = Subset(train_dataset, [i for i, (p, _) in enumerate(train_dataset.samples) if p in valid_files])
-        test_dataset  = Subset(test_dataset,  [i for i, (p, _) in enumerate(test_dataset.samples)  if p in valid_files])
+        train_dataset = Subset(train_dataset, [i for i, (p, _) in enumerate(train_dataset.samples) if os.path.abspath(p) in valid_files])
+        test_dataset  = Subset(test_dataset,  [i for i, (p, _) in enumerate(test_dataset.samples)  if os.path.abspath(p) in valid_files])
 
     # shuffle=False is critical to keep extracted features aligned with their labels
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
