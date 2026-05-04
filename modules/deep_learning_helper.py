@@ -6,7 +6,7 @@ import torch.nn as nn
 import torchvision.transforms as transforms
 import torchvision.models as models
 from torchvision.datasets import ImageFolder
-from torch.utils.data import DataLoader
+from torch.utils.data import DataLoader, Subset
 from sklearn.svm import LinearSVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, accuracy_score
@@ -41,8 +41,15 @@ def get_transforms(metadata):
 
     return train_transform, test_transform
 
-def get_dataloaders(metadata, train_transform, test_transform, batch_size=32):
-    """Creates PyTorch DataLoaders for train and test splits."""
+def get_dataloaders(metadata, train_transform, test_transform, batch_size=32, valid_files=None):
+    """Creates PyTorch DataLoaders for train and test splits.
+
+    Parameters
+    ----------
+    valid_files : set, optional
+        If provided, only images whose path is in this set are included.
+        Pass ``set(clean_df['filepath'])`` to use the cleaned dataset.
+    """
     dataset_dir = "dataset"
     train_dir = os.path.join(dataset_dir, metadata["splits"]["train"])
     test_dir = os.path.join(dataset_dir, metadata["splits"]["test"])
@@ -50,9 +57,13 @@ def get_dataloaders(metadata, train_transform, test_transform, batch_size=32):
     train_dataset = ImageFolder(root=train_dir, transform=train_transform)
     test_dataset = ImageFolder(root=test_dir, transform=test_transform)
 
+    if valid_files is not None:
+        train_dataset = Subset(train_dataset, [i for i, (p, _) in enumerate(train_dataset.samples) if p in valid_files])
+        test_dataset  = Subset(test_dataset,  [i for i, (p, _) in enumerate(test_dataset.samples)  if p in valid_files])
+
     # shuffle=False is critical to keep extracted features aligned with their labels
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False) 
-    test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
+    test_loader  = DataLoader(test_dataset,  batch_size=batch_size, shuffle=False)
 
     return train_loader, test_loader
 
