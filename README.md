@@ -46,7 +46,7 @@ Ensure the following libraries are installed (detailed in `requirements.txt`):
 The code is designed to automatically install dependencies, download the dataset using `gdown`, and run the entire pipeline correctly within the Colab environment.
 
 **Option B: Use the Standalone Notebook**
-1. Click the [Colab Notebook link](#🔗-links) provided below.
+1. Click the Colab Notebook link provided below.
 2. Execute the notebook cells sequentially from top to bottom. This standalone notebook has everything configured to download the dataset and run the pipeline independently.
 
 ## 📂 Project Folder Structure
