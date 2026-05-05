@@ -52,19 +52,21 @@ The code is designed to automatically install dependencies, download the dataset
 ## 📂 Project Folder Structure
 
 ```text
-ML_IMAGE_DATASET/
-├── dataset_metadata.json   # Metadata containing data splits and normalization parameters
-├── requirements.txt        # Required Python packages
-├── README.md               # Project documentation
-├── modules/                # Core Python modules
-│   ├── dataset_helper.py     # Dataset download, extraction, and standardization
-│   ├── eda_helper.py         # Exploratory Data Analysis and data cleaning
-│   ├── traditional_helper.py # Traditional ML models and feature extraction
-│   └── deep_learning_helper.py # Deep learning feature embedding and inference
-├── notebooks/
-│   └── main.ipynb          # Main execution notebook
-├── dataset/                # Extracted and structured image data (auto-generated)
-└── features/               # Extracted deep features arrays (auto-generated)
+dataset_metadata.json       # Metadata containing data splits and normalization parameters
+requirements.txt            # Required Python packages
+README.md                   # Project documentation
+features/                   # Extracted deep features (NumPy arrays)
+   X_train_resnet18.npy
+   X_test_resnet18.npy
+   y_train_resnet18.npy
+   y_test_resnet18.npy
+modules/                    # Core Python modules
+   dataset_helper.py
+   deep_learning_helper.py
+   eda_helper.py
+   traditional_helper.py
+notebooks/
+   main.ipynb              # Main execution notebook
 ```
 
 ## 🔗 Links
